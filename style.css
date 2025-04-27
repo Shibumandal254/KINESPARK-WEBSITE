@@ -2,105 +2,71 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+/* Navbar styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #ccc;
+  background-color: rgb(49, 46, 46);
   font-family: Arial, sans-serif;
 }
 
-body {
-  background: #f8fcff;
-}
-
-.main-header {
+.logo-section {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   align-items: center;
-  background: #7e939a;
-  color: white;
-  padding: 15px 30px;
+  
 }
 
 .logo {
-  font-size: 1.5rem;
+  border: #d7cccc;
+  /* border-style: solid; */
+  width: 100px;
+  height: auto;
+  margin-right: 0.5rem;
+}
+
+.brand-name {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #000;
   font-weight: bold;
 }
-
-.logo span {
-  color: #3aa7d7;
+.name-color{
+  color:#ccc;
 }
 
-.nav {
+.nav-links {
   display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.search-login {
-  display: flex;
-  gap: 10px;
   align-items: center;
-  flex-wrap: wrap;
+  gap: 1.5rem;
 }
 
-.search-login input {
-  padding: 5px;
-}
-
-.search-login button {
-  background: #004c70;
-  color: white;
-  border: none;
-  padding: 6px 12px;
-  cursor: pointer;
-}
-
-.search-login a {
-  color: white;
+.nav-links a {
   text-decoration: none;
-}
-
-/* Hero Section */
-.hero {
-  display: flex;
-  justify-content: space-between;
-  padding: 60px 30px;
-  background: linear-gradient(to top, #e7f3fb 80%, #fff 20%);
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.hero-content {
-  flex: 1;
-  min-width: 300px;
-  padding: 20px;
-}
-
-.hero-content h1 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
-
-.apply-btn {
-  padding: 12px 24px;
-  background: green;
-  color: white;
+  color: #000;
   font-size: 1rem;
-  border: none;
-  border-radius: 5px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: rebeccapurple;
+}
+
+.nav-links .active {
+  color: rebeccapurple;
+  font-weight: bold;
+}
+
+.dropdown .arrow {
+  font-size: 0.7rem;
+  margin-left: 4px;
+}
+
+.search-icon {
+  font-size: 1.2rem;
   cursor: pointer;
 }
-
-.hero-actions {
-  flex: 1;
-  min-width: 300px;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-  
